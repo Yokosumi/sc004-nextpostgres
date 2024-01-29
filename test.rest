@@ -1,11 +1,17 @@
-    @url = https://sc004-nextpostgres.vercel.app/
+    @url = http://localhost:3000
      
     ### ADD A NOTE
     POST {{url}}/api/add-note
     content-type: application/json
-     
+
+
+  
     {
         "app_pin": "456",
-        "body": "this is a test note",
+        "body": "this is another test note",
         "rank": 1.1                
     }
+
+
+### GET ALL NOTES
+ POST {{url}}/api/get-notes

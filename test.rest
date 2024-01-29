@@ -1,0 +1,11 @@
+    @url = http://localhost:3000
+     
+    ### ADD A NOTE
+    POST {{url}}/api/add-note
+    content-type: application/json
+     
+    {
+        "app_pin": "123",
+        "body": "this is the second note",
+        "rank": 1.1                
+    }

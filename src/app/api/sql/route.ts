@@ -7,7 +7,7 @@ export async function GET(request: Request) {
 
         await sql`CREATE TABLE IF NOT EXISTS Notes ( id SERIAL PRIMARY KEY, body varchar(255), rank decimal );`
 
-        return NextResponse.json('ok', { status: 200 })
+        return NextResponse.json('ok')
     } catch (error: any) {
         return NextResponse.json(error.message, { status: 500 })
     }

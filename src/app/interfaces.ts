@@ -1,10 +1,10 @@
-export interface note {
+export interface INote {
     id: number
     body: string
     rank: number
 }
 
-export interface newNote {
+export interface INewNote {
     body: string
     rank: string
     app_pin: string

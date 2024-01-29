@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { note, newNote, blankNewNote } from './interfaces'
 
 export default function Home() {
     return (
